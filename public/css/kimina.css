@@ -37,9 +37,13 @@ a {
   width: 260px;
 }
 
+.gradient-line {
+  height: 1px;
+  width: 100%;
+  background: radial-gradient(black, #c6c6c6, white);
+}
+
 .nav-container {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
   padding: 6px;
   display: flex;
   justify-content: space-between;

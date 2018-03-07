@@ -18,6 +18,7 @@
         <img class="logo" src="https://steemitimages.com/DQmWEVPD6Vq6mE495iEJLdGLonBeMT5ghBQSmMn5VjkbV3F/Laravel_logo_wordmark_logotype.png" alt="KIMINA BY JIN">
       </div>
 
+      <div class="gradient-line"></div>
       <div class="nav-container">
         <a class="toggle-menu" href="#"><i class="fas fa-bars"></i></a>
         <nav>
@@ -34,6 +35,7 @@
           <li> <a href="#"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
       </div>
+      <div class="gradient-line"></div>
 
     </header>
     <!-- HEADER END -->
