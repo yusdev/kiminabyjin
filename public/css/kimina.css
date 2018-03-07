@@ -1,0 +1,166 @@
+/* Mobile first */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/** FRONT: Header *******************************************************/
+/************************************************************************/
+
+.logo-container {
+  background-color: pink;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 260px;
+}
+
+.nav-container {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-container a {
+  color: #000000;
+  font-size: 20px;
+}
+
+.menu-nav {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    top: 166px;
+    left: 0;
+    width: 100%;
+}
+
+.menu-nav a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.menu-nav a:hover {
+  background-color: pink;
+}
+
+.selected {
+    display: block;
+    transition: transform .2s;
+}
+
+.social-menu {
+  display: inline-block;
+}
+
+.social-menu li{
+  display: inline-block;
+}
+
+.social-menu a {
+  color: #000000;
+  font-size: 20px;
+  padding: 8px;
+}
+
+/** FRONT: Footer *******************************************************/
+/************************************************************************/
+.social-footer{
+  display: flex;
+  justify-content: center;
+  background-color: #e6e6e6;
+  padding: 10px 0;
+}
+.social-footer li {
+  display: inline-block;
+}
+.social-footer a {
+  color: #000000;
+  font-size: 40px;
+  padding: 10px;
+}
+.footer{
+  background-color: #000000;
+  padding: 20px 0 10px 0;
+}
+.footer p {
+  text-align: center;
+  color: #ffffff;
+}
+.copyright{
+  color: pink !important;
+}
+
+/** FRONT: Home *********************************************************/
+/************************************************************************/
+
+.main-banner img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+/************************************************************************/
+/************************************************************************/
+/** DESKTOP *************************************************************/
+/************************************************************************/
+/************************************************************************/
+@media(min-width:750px){
+
+  /* FRONT: Header */
+
+  .toggle-menu {
+    display: none;
+  }
+
+  .menu-nav {
+    position:inherit;
+    display: block;
+  }
+
+  .menu-nav li{
+    display: inline-block;
+  }
+
+  .menu-nav a {
+    padding: 0 10px;
+  }
+
+  .menu-nav a:hover {
+    background-color: #fff;
+    color: pink;
+  }
+
+  nav {
+    margin-left: 28%;
+  }
+
+}
