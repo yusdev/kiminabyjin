@@ -17,4 +17,8 @@ Route::get('/', function () {
 
 Route::get('/faqs', function(){
     return view('front.faqs');
-})->name('faqs'); 
+})->name('faqs');
+
+Route::get('/contact', function(){
+    return view('front.contact');
+})->name('contact');

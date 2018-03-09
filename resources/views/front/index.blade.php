@@ -15,7 +15,10 @@
     <!-- HEADER START -->
     <header>
       <div class="logo-container">
-        <img class="logo" src="https://steemitimages.com/DQmWEVPD6Vq6mE495iEJLdGLonBeMT5ghBQSmMn5VjkbV3F/Laravel_logo_wordmark_logotype.png" alt="KIMINA BY JIN">
+        <a href="{{ route('home') }}">
+          <img class="logo" src="https://steemitimages.com/DQmWEVPD6Vq6mE495iEJLdGLonBeMT5ghBQSmMn5VjkbV3F/Laravel_logo_wordmark_logotype.png" alt="KIMINA BY JIN">
+        </a>
+
       </div>
 
       <div class="gradient-line"></div>
@@ -26,13 +29,13 @@
               <li> <a href="{{ route('home') }}">HOME</a></li>
               <li> <a href="{{ route('faqs') }}">FAQs</a></li>
               <li> <a href="#">E-SHOP</a></li>
-              <li> <a href="#">CONTACTO</a></li>
+              <li> <a href="{{ route('contact') }}">CONTACTO</a></li>
           </ul>
         </nav>
         <ul class="social-menu">
-          <li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li> <a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+          <li> <a href="https://www.facebook.com/kiminabyjin" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li> <a href="https://www.instagram.com/kiminabyjin/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li> <a href="#"><i class="fas fa-shopping-cart" target="_blank"></i></a></li>
         </ul>
       </div>
       <div class="gradient-line"></div>
@@ -40,7 +43,9 @@
     </header>
     <!-- HEADER END -->
 
-    @yield('content')
+    <div class="content">
+      @yield('content')
+    </div>
 
     <footer>
       <div class="social-footer">
@@ -56,6 +61,7 @@
     </footer>
 
     <script>
+        //Toggle Menu Header
         var toggleMenu = document.querySelector(".toggle-menu");
         toggleMenu.onclick = function() {
           var menu = document.querySelector(".menu-nav");
@@ -65,6 +71,25 @@
             menu.classList.add("selected");
           }
         }
+
+        // Faqs
+        var item = document.querySelectorAll(".faq-item");
+        var q = document.querySelectorAll(".question");
+        for (i = 0; i < q.length; i++) {
+            q[i].addEventListener('click', toggleSelected, false);
+        }
+        function toggleSelected() {
+          var itemSelected = this.parentNode.className;
+          for (i = 0; i < item.length; i++) {
+              item[i].className = 'faq-item close';
+          }
+          if (itemSelected == 'faq-item close') {
+              this.parentNode.className = 'faq-item open';
+          }
+
+        }
+
     </script>
+
   </body>
 </html>
