@@ -163,27 +163,80 @@ h2{
   width:100%;
 }
 .question{
-  /* cursor:pointer; */
+  cursor:pointer;
   border-bottom: 1px solid var(--kiminapink);
 }
+.answer{
+  padding: 10px 40px;
+  color: #b2b2b2;
+  text-align: justify;
+}
 
-.close .answer{
+.question p {
+  margin: 10px 0;
+  padding: 0 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.faqclose .answer{
   display:none;
 }
 
-.open .answer{
+.faqopen .answer{
   display:block;
 }
 
-.open .question:before{
-  content:"-"!important;
+.faqopen .question p:before{
+  content:"- "!important;
+  color: var(--kiminapink);
+  font-weight: bold;
 }
 
-.question:before{
-  content:"+";
+.faqclose .question p:before{
+  content:"+ ";
+  color: var(--kiminapink);
+  font-weight: bold;
+}
+.faqs-footer h6 {
+  color: var(--kiminapink);
+  text-align: center;
+}
+.faqs-footer p {
+  color: #b2b2b2;
+  text-align: center;
 }
 
+/** FRONT: Contact ******************************************************/
+/************************************************************************/
+.contact-info{
+  margin: 30px;
+}
+.contact-item p {
+  text-align: center;
+}
 
+.icon{
+  color: var(--kiminapink);
+  font-size: 36px;
+}
+
+.contact-form h6 {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-form form {
+  max-width: 450px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
 /************************************************************************/
 /************************************************************************/
 /** DESKTOP *************************************************************/
@@ -217,6 +270,36 @@ h2{
 
   nav {
     margin-left: 28%;
+  }
+
+  /* FRONT: Faqs */
+
+  .faq-item{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .question p, .answer {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .answer {
+    padding-left: 70px;
+  }
+
+  .faqclose .question p:before,  .faqopen .question p:before {
+    margin-right: 30px;
+  }
+
+  /* FRONT: Contact */
+  .contact-info {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-item {
+    display: inline-block;
+    margin: 20px;
   }
 
 }

@@ -28,14 +28,14 @@
           <ul class="menu-nav">
               <li> <a href="{{ route('home') }}">HOME</a></li>
               <li> <a href="{{ route('faqs') }}">FAQs</a></li>
-              <li> <a href="#">E-SHOP</a></li>
+              <li> <a href="{{ route('eshop') }}">E-SHOP</a></li>
               <li> <a href="{{ route('contact') }}">CONTACTO</a></li>
           </ul>
         </nav>
         <ul class="social-menu">
           <li> <a href="https://www.facebook.com/kiminabyjin" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
           <li> <a href="https://www.instagram.com/kiminabyjin/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li> <a href="#"><i class="fas fa-shopping-cart" target="_blank"></i></a></li>
+          <li> <a href="{{ route('shopping-cart') }}"><i class="fas fa-shopping-cart" target="_blank"></i></a></li>
         </ul>
       </div>
       <div class="gradient-line"></div>
@@ -81,10 +81,10 @@
         function toggleSelected() {
           var itemSelected = this.parentNode.className;
           for (i = 0; i < item.length; i++) {
-              item[i].className = 'faq-item close';
+              item[i].className = 'faq-item faqclose';
           }
-          if (itemSelected == 'faq-item close') {
-              this.parentNode.className = 'faq-item open';
+          if (itemSelected == 'faq-item faqclose') {
+              this.parentNode.className = 'faq-item faqopen';
           }
 
         }
