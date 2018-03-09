@@ -27,7 +27,7 @@ ul li {
   list-style: none;
 }
 
-a {
+a, a:hover, a:active, a:visited, a:link {
   text-decoration: none;
 }
 
@@ -62,7 +62,9 @@ h2{
   display: block;
   width: 260px;
   text-decoration: none;
+  color: #000000;
 }
+
 
 .gradient-line {
   height: 1px;
@@ -279,27 +281,29 @@ h2{
   .toggle-menu {
     display: none;
   }
-
   .menu-nav {
     position:inherit;
     display: block;
   }
-
   .menu-nav li{
     display: inline-block;
   }
-
   .menu-nav a {
     padding: 0 10px;
   }
-
   .menu-nav a:hover {
     background-color: #fff;
     color: pink;
   }
-
-  nav {
-    margin-left: 28%;
+  .nav-container {
+    display: flex;
+    justify-content: center;
+  }
+  .social-menu {
+    position: absolute;
+    z-index: 99;
+    top: 146px;
+    right: 10px;
   }
 
   /* FRONT: Faqs */
@@ -308,16 +312,13 @@ h2{
     width: 90%;
     margin: 0 auto;
   }
-
   .question p, .answer {
     width: 70%;
     margin: 10px auto;
   }
-
   .answer {
     padding-left: 70px;
   }
-
   .faqclose .question p:before,  .faqopen .question p:before {
     margin-right: 30px;
   }

@@ -25,9 +25,11 @@
   <div class="products">
     @foreach($products as $key => $product)
       <div class="product">
-        <img src="https://cdn.cliqueinc.com/posts/183107/insider-tips-for-finding-the-best-stuff-at-forever-21-1641840-1454353660.640x0c.jpg" alt="">
-        <p>Lorem ipsum title</p>
-        <p>$123</p>
+        <a href="#">
+          <img src="https://cdn.cliqueinc.com/posts/183107/insider-tips-for-finding-the-best-stuff-at-forever-21-1641840-1454353660.640x0c.jpg" alt="">
+          <p>Lorem ipsum title</p>
+          <p>$123</p>
+        </a>
       </div>
     @endforeach
   </div>
