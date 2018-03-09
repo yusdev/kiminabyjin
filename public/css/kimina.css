@@ -1,6 +1,11 @@
 :root {
   --kiminagrey: #f2f2f2;
-  --kiminapink: #eed4cb;
+  --kiminapink: pink;
+}
+
+@font-face {
+    font-family: kiminaFont;
+    src: url(algo.woff);
 }
 
 /* Mobile first */
@@ -48,6 +53,7 @@ h2{
   background-color: var(--kiminapink);
   padding: 30px;
   margin: 0 auto;
+  height: 140px;
 }
 
 .logo {
@@ -55,6 +61,7 @@ h2{
   margin-right: auto;
   display: block;
   width: 260px;
+  text-decoration: none;
 }
 
 .gradient-line {
@@ -79,7 +86,7 @@ h2{
     position: absolute;
     z-index: 100;
     background-color: #ffffff;
-    top: 166px;
+    top: 182px;
     left: 0;
     width: 100%;
 }
@@ -122,6 +129,7 @@ h2{
   justify-content: center;
   background-color: var(--kiminagrey);
   padding: 10px 0;
+  clear: both;
 }
 .social-footer li {
   display: inline-block;
@@ -237,6 +245,28 @@ h2{
   padding: 5px;
   margin-bottom: 10px;
 }
+
+.contact-form textarea {
+   resize: none;
+}
+
+/** FRONT: Eshop ******************************************************/
+/************************************************************************/
+.eshop-content{
+  width: 70%;
+  margin: auto;
+}
+
+.product img{
+  width: 100%;
+  border: 1px grey solid;
+}
+
+.product p {
+  text-align: center;
+}
+
+
 /************************************************************************/
 /************************************************************************/
 /** DESKTOP *************************************************************/
@@ -301,5 +331,31 @@ h2{
     display: inline-block;
     margin: 20px;
   }
+
+  /* FRONT: Eshop */
+  .eshop-content{
+    width: 90%;
+    margin: auto;
+  }
+  .categories {
+    width: 15%;
+  }
+  .products {
+    margin-left: 15%;
+    width: 85%;
+    padding: 5%;
+  }
+  .categories, .product{
+    float: left;
+  }
+  .product{
+    width: 31%;
+    margin: 1%;
+  }
+  .product img{
+    height: 400px;
+    object-fit: cover;
+  }
+
 
 }

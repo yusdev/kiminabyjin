@@ -16,9 +16,8 @@
     <header>
       <div class="logo-container">
         <a href="{{ route('home') }}">
-          <img class="logo" src="https://steemitimages.com/DQmWEVPD6Vq6mE495iEJLdGLonBeMT5ghBQSmMn5VjkbV3F/Laravel_logo_wordmark_logotype.png" alt="KIMINA BY JIN">
+          <h1 class="logo">KIMINA BY JIN</h1>
         </a>
-
       </div>
 
       <div class="gradient-line"></div>
@@ -50,8 +49,8 @@
     <footer>
       <div class="social-footer">
         <ul>
-          <li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li> <a href="https://www.facebook.com/kiminabyjin" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li> <a href="https://www.instagram.com/kiminabyjin/" target="_blank"><i class="fab fa-instagram"></i></a></li>
         </ul>
       </div>
       <div class="footer">
