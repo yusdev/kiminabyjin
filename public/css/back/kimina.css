@@ -54,15 +54,15 @@ header {
   padding: 10px;
 }
 
-.menu-body ul li{
+.menu-body li a {
+  color: #fff;
+  padding: 10px 0;
+}
+.menu-body li {
   padding: 10px 0;
 }
 
-.menu-body a {
-  color: #fff;
-}
-
-.minifyme {
+.minifyButton {
   padding: 13px 20px 13px 20px;
   background:#454545;
   color:#A8A8A8;
@@ -70,13 +70,25 @@ header {
   font-size: 18px;
 }
 
-.minifyme i {
+.minifyButton i {
   text-align: center;
 }
 
-.minifyme:hover{
+.minifyButton:hover{
   background:#646464;
   color:#E4E4E4;
+}
+
+.menu-body .sub a{
+  color: #fff;
+}
+
+.sub {
+  margin-top: 10px;
+  display:none;
+}
+.sub li{
+  padding: 5px 0 5px 28px;
 }
 
 .panel-content {

@@ -3,7 +3,16 @@
 @section('content')
 
 <div class="panel-content">
-  asdfasdadasdasdasdadasdadsdgdsjgksdjlgkdjskgjdwgjsdgjksdl
+  <div class="">
+    <h3>Inicio</h3>
+
+  </div>
+  <div class="">
+    <h3>Preguntas frecuentes</h3>
+  </div>
+  <div class="">
+    <h3>Contacto</h3>
+  </div>
 </div>
 
 @endsection

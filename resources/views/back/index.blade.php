@@ -24,21 +24,28 @@
 
       <div class="menu-header">
         <p>Menú</p>
-        <div class="minifyme" onclick="minifyme()">
+        <div class="minifyButton" onclick="minifyMenu()">
             <i class="fas fa-angle-left"></i>
         </div>
       </div>
 
-      <nav class="menu-body">
-        <ul>
-          <li data-nav="escritorio">
+      <nav>
+        <ul class="menu-body">
+          <li>
             <a href="#"><i class="fas fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Escritorio</span></a>
           </li>
-          <li data-nav="paginas">
+          <li>
             <a href="{{ route('admin.pages') }}"><i class="fas fa-lg fa-fw fa-file-code"></i> <span class="menu-item-parent"> Paginas</span></a>
           </li>
-          <li data-nav="tienda">
-            <a href="#"><i class="fas fa-lg fa-fw fa-tag"></i> <span class="menu-item-parent">E-Shop</span></a>
+          <li>
+            <a href="#" onclick="showSub()"><i class="fas fa-lg fa-fw fa-tag"></i> <span class="menu-item-parent">E-Shop</span></a>
+            <ul class="sub">
+              <li> <a href="#">Categorías</a> </li>
+              <li> <a href="#">Color</a> </li>
+              <li> <a href="{{ route('admin.sizes') }}">Talle</a> </li>
+              <li> <a href="#">Productos</a> </li>
+              <li> <a href="#">Ventas</a> </li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -49,8 +56,18 @@
 
     <script>
 
-        function minifyme(){
-          var menu = document.querySelector('.minifyme');
+        function showSub(){
+          var sub = document.querySelector('.sub');
+          if(sub.style.display == 'none'){
+            sub.style.display = 'block';
+          }else{
+            sub.style.display = 'none'
+          }
+
+        }
+
+        function minifyMenu(){
+          var menu = document.querySelector('.minifyButton');
           var menuIcon = menu.firstElementChild;
           var noicons = document.querySelectorAll('.menu-item-parent');
           var menuHeader = document.querySelector('.menu-header p');

@@ -28,3 +28,6 @@ Route::get('/admin', function(){
 Route::get('/admin/paginas', function(){
     return view('back.pages');
 })->name('admin.pages');
+Route::get('/admin/eshop/talles', function(){
+    return view('back.sizes');
+})->name('admin.sizes');
