@@ -8,7 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link rel="stylesheet" href="/css/kimina.css">
+    <link rel="stylesheet" href="/css/front/kimina.css">
+    <link rel="shortcut icon" href="{{ asset('favicon.jpg') }}">
   </head>
 
   <body>
@@ -71,7 +72,7 @@
           }
         }
 
-        // Faqs
+        // Faqs toggle
         var item = document.querySelectorAll(".faq-item");
         var q = document.querySelectorAll(".question");
         for (i = 0; i < q.length; i++) {

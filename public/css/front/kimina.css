@@ -1,11 +1,31 @@
 :root {
   --kiminagrey: #f2f2f2;
-  --kiminapink: pink;
+  --kiminapink: #f4ccca;
 }
 
 @font-face {
-    font-family: kiminaFont;
-    src: url(algo.woff);
+    font-family: kiminaFont28;
+    src: url(/fonts/KnockoutHTF28.woff);
+}
+@font-face {
+    font-family: kiminaFont29;
+    src: url(/fonts/KnockoutHTF29.woff);
+}
+@font-face {
+    font-family: kiminaFont49;
+    src: url(/fonts/KnockoutHTF49.woff);
+}
+@font-face {
+    font-family: kiminaFont53;
+    src: url(/fonts/KnockoutHTF53.woff);
+}
+@font-face {
+    font-family: kiminaFont68;
+    src: url(/fonts/KnockoutHTF68.woff);
+}
+@font-face {
+    font-family: kiminaFont69;
+    src: url(/fonts/KnockoutHTF69.woff);
 }
 
 /* Mobile first */
@@ -16,6 +36,7 @@
 
 body {
   margin: 0;
+  font-family: 'kiminaFont29';
 }
 
 ul {
@@ -53,16 +74,17 @@ h2{
   background-color: var(--kiminapink);
   padding: 30px;
   margin: 0 auto;
-  height: 140px;
+  height: 130px;
 }
 
 .logo {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 260px;
+  text-align: center;
   text-decoration: none;
   color: #000000;
+  font-size: 72px;
+  font-family: 'kiminaFont68';
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -80,7 +102,7 @@ h2{
 
 .nav-container a {
   color: #000000;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .menu-nav {
@@ -302,7 +324,7 @@ h2{
   .social-menu {
     position: absolute;
     z-index: 99;
-    top: 146px;
+    top: 139px;
     right: 10px;
   }
 
@@ -312,12 +334,17 @@ h2{
     width: 90%;
     margin: 0 auto;
   }
+  .question p {
+    font-size: 21px;
+  }
   .question p, .answer {
     width: 70%;
     margin: 10px auto;
   }
   .answer {
     padding-left: 70px;
+    font-size: 18px;
+    color: #B3B3B3;
   }
   .faqclose .question p:before,  .faqopen .question p:before {
     margin-right: 30px;
@@ -354,7 +381,7 @@ h2{
     margin: 1%;
   }
   .product img{
-    height: 400px;
+    height: 380px;
     object-fit: cover;
   }
 

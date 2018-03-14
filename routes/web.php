@@ -1,5 +1,5 @@
 <?php
-
+//Front
 Route::get('/', function () {
     return view('front.home');
 })->name('home');
@@ -19,3 +19,12 @@ Route::get('/productos', function(){
 Route::get('/carrito', function(){
     return view('front.cart');
 })->name('shopping-cart');
+
+
+//Back
+Route::get('/admin', function(){
+    return view('back.index');
+})->name('admin.index');
+Route::get('/admin/paginas', function(){
+    return view('back.pages');
+})->name('admin.pages');
