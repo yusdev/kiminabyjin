@@ -31,3 +31,7 @@ Route::get('/admin/paginas', function(){
 Route::get('/admin/eshop/talles', function(){
     return view('back.sizes');
 })->name('admin.sizes');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
